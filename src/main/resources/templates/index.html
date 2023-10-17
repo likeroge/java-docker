@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>My Java app</title>
 </head>
 <body>
     <h1>Welcome to homepage</h1>
+    <button>
+        <a th:href="@{/customer}">Customers</a>
+    </button>
+    <button>
+        <a th:href="@{/customer/form}">Form</a>
+    </button>
+    <button>
+        <a th:href="@{/users}">MvcUsers</a>
+    </button>
+    <button>
+        <a th:href="@{/users/all}">JsonUsers</a>
+    </button>
 </body>
 </html>
